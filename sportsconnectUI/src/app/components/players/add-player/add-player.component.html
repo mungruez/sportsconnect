@@ -1,0 +1,31 @@
+<div class="container my-5"> 
+    <h1 class="mb-3"Add New Player></h1>
+    <div class="row">
+        <div class="col-6">
+            <form name="playerform" #playerform="ngForm" (ngSubmit)="addPlayer()" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="enter player name" name="name" [(ngModel)]="addPlayerRequest.name" autofocus required>
+              </div>
+              <div class="mb-3">
+                <label for="age" class="form-label">Age</label>
+                <input type="number" class="form-control" id="age" placeholder="enter player age" name="age" [(ngModel)]="addPlayerRequest.age" required>
+              </div>
+              <div class="mb-3">
+                <label for="sport" class="form-label">Sport</label>
+                <input type="text" class="form-control" id="sport" placeholder="enter player sport" name="sport" [(ngModel)]="addPlayerRequest.sport" required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" class="form-control" id="phone" placeholder="enter player phone" name="phone" [(ngModel)]="addPlayerRequest.phone" required>
+              </div>
+              <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="enter player address" name="address" [(ngModel)]="addPlayerRequest.address" required>
+              </div>
+
+              <button type="submit" class="btn btn-success" [disabled]="playerform.invalid" accesskey="S">Save</button>
+            </form>
+        </div>
+    </div>  
+</div>

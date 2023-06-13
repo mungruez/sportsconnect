@@ -1,0 +1,40 @@
+<div class="container my-5"> 
+    <h1 class="mb-3"Edit Event></h1>
+
+    <div class="row"> 
+        <div class="col-6">
+            <form #form="ngForm" (ngSubmit)="updateEvent()">
+              <div class="mb-3">
+                    <label for="Id" class="form-label">Id</label>
+                    <input type="text" class="form-control" id="Id" placeholder="enter event Id" readonly name="Id" [(ngModel)]="eventDetails.Id">
+              </div>
+              <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title" placeholder="enter event title" name="title" [(ngModel)]="eventDetails.title">
+              </div>
+              <div class="mb-3">
+                <label for="duration" class="form-label">Duration</label>
+                <input type="number" class="form-control" id="duration" placeholder="enter event duration" name="duration" [(ngModel)]="eventDetails.duration">
+              </div>
+              <div class="mb-3">
+                <label for="sport" class="form-label">Sport</label>
+                <input type="text" class="form-control" id="sport" placeholder="enter event sport" name="sport" [(ngModel)]="eventDetails.sport">
+              </div>
+              <div class="mb-3">
+                <label for="owner" class="form-label">Organiser</label>
+                <input type="text" class="form-control" id="owner" placeholder="enter event owner" name="owner" [(ngModel)]="eventDetails.owner" readonly>
+              </div>
+              <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input type="text" class="form-control" id="location" placeholder="enter event location" name="location" [(ngModel)]="eventDetails.location">
+              </div>
+
+              <button type="submit" class="btn btn-primary mr-5">Save</button>
+              <button type="button" class="btn btn-danger" (click)="deleteEvent()">Delete</button>
+            </form>
+        </div>
+    </div>
+        
+</div>
+
+

@@ -1,0 +1,60 @@
+<div class="container my-5">
+    <div class="table-responsive-lg"> 
+        <h3 class="mb-3">Players</h3>
+        <table class="table" *ngIf="players">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let player of players">
+                    <td>{{player.pCode}}</td>
+                    <td>{{player.name}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <p *ngIf="!players"> No Players Found!</p>
+    </div>
+    <hr>
+    <h1 class="mb-3">Events</h1>
+    <div class="mb-3">
+        <label for="pCode" class="form-label">Enter Player Code To Join/Create/Update events</label>
+        <input type="number" class="form-control" id="pCode" placeholder="enter player Id to join" name="pCode" [(ngModel)]="pCode">
+        <hr>
+        <div class="row">
+            <button class="btn btn-primary-md" *ngIf="pCode > -1" routerLink="/events/add" [state]="{pCode: pCode}">AddEvent</button>
+        </div>
+        
+    </div>
+    
+    <table class="table-responsive-lg" *ngIf="events && events.length > 0">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Duration</th>
+                <th>Sport</th>
+                <th>Location</th>
+                <th>startDate</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let event of events">
+                <td>{{event.title}}</td>
+                <td>{{event.duration}}</td>
+                <td>{{event.sport}}</td>
+                <td>{{event.location}}</td>
+                <td>{{event.startDate}}</td>
+                <td><button class="btn btn-info-sm" (click)="getEvent(event)">View</button></td>
+                <td><button class="btn btn-info-md" [routerLink]="['/events','edit',event.pCode]" [state]="{pCode: pCode}" *ngIf="event.owner == pCode">Edit</button></td>
+                <td>
+                    <button (click)="joinEvent(event)" class="btn btn-info-sm" *ngIf="pCode">Join</button>
+                    <button (click)="leaveEvent(event)" class="btn btn-danger-sm" *ngIf="pCode">Leave</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p *ngIf="!events || events.length < 1"> No Events Found!</p>
+</div>

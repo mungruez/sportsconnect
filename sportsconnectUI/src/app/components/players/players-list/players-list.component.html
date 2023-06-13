@@ -1,0 +1,28 @@
+<div class="table-responsive-lg"> 
+    <h1 class="mb-3">Players</h1>
+    
+    <table class="table" *ngIf="players && players.length > 0">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Sport</th>
+                <th>Phone</th>
+                <th>lastActive</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let player of players">
+                <td>{{player.pCode}}</td>
+                <td>{{player.name}}</td>
+                <td>{{player.sport}}</td>
+                <td>{{player.phone}}</td>
+                <td>{{player.lastActive}}</td>
+                <button type="button" class="btn btn-info" (click)="getPlayer(player.pCode)">View</button>
+                <button [routerLink]="['/players','edit',player.pCode]" class="btn btn-warning">Edit</button>
+            </tr>
+        </tbody>
+    </table>
+    <p *ngIf="!players || players.length < 1"> No Players Found!</p>
+</div>

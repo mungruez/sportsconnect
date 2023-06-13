@@ -1,0 +1,54 @@
+#sect1 {   
+    max-width: 83vw;
+    margin-top: 19px;
+    margin-left: 76px;
+}
+
+#sect2 {  
+    height: 240px;  
+    color: #fff;
+    background-image: url("../../../assets/dotnetangsql.jpg");  
+    background-size: 100%;  
+    background-size: cover;  
+    max-width: 27vw;
+    min-height: 230px;
+    margin-top: 19px;
+    margin-left: 76px;
+    min-width: fit-content;
+}
+
+#sect3 {  
+    height: 240 px;  
+    color: #fff;
+    background-image: url("../../../assets/databaseimg.jpg");  
+    background-size: 100%;  
+    background-size: cover;  
+    max-width: 27vw;
+    min-height: 230px;
+    margin-top: 19px;
+    margin-left: 19px;
+    min-width: fit-content;
+}
+#sect4 {  
+    height: 240px;  
+    color: #fff;
+    background-image: url("../../../assets/mydotnetappimg.jpg");  
+    background-size: 100%;  
+    background-size: cover;  
+    max-width: 27vw;
+    min-height: 230px;
+    margin-top: 19px;
+    margin-left: 19px;
+    min-width: fit-content;
+}
+
+#sectf {  
+    max-width: 94vw;
+    max-height: 235px;
+    margin-top: 19px;
+    margin-left: 27px;
+    background-size: 100%;  
+    background-size: cover;
+    background-color: lightgrey;
+    margin-bottom: 38px;
+}
