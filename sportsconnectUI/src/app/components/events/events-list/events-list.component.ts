@@ -34,10 +34,8 @@ export class EventsListComponent implements OnInit{
   }
 
   joinEvent(event1: Event) {
-    console.log("**Event passed onClick"+event1);
     for (let ev of this.events) {
       if(ev.pCode==event1.pCode) {
-        console.log("***YA EVENT FOUND from events array!!")
         this.eventsService.joinEvent("/:"+this.pCode,ev).subscribe({
           next: (player) => {
             alert( "Id: "+this.pCode+" Name: "+player.name+" Phone: "+player.phone+" Joined Event: "+ev.title+" At:"+player.lastActive );
