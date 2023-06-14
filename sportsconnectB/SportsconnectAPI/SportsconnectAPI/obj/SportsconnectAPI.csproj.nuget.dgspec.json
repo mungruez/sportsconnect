@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Zaakir Mungrue\\Desktop\\clientApp\\sportsconnectB\\SportsconnectAPI\\SportsconnectAPI\\SportsconnectAPI.csproj": {}
+    "C:\\Users\\Zaakir Mungrue\\Desktop\\clientApp\\sportsconnectB\\SportsconnectAPI\\sportsconnectAPI\\SportsconnectAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Zaakir Mungrue\\Desktop\\clientApp\\sportsconnectB\\SportsconnectAPI\\SportsconnectAPI\\SportsconnectAPI.csproj": {
+    "C:\\Users\\Zaakir Mungrue\\Desktop\\clientApp\\sportsconnectB\\SportsconnectAPI\\sportsconnectAPI\\SportsconnectAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Zaakir Mungrue\\Desktop\\clientApp\\sportsconnectB\\SportsconnectAPI\\SportsconnectAPI\\SportsconnectAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Zaakir Mungrue\\Desktop\\clientApp\\sportsconnectB\\SportsconnectAPI\\sportsconnectAPI\\SportsconnectAPI.csproj",
         "projectName": "SportsconnectAPI",
-        "projectPath": "C:\\Users\\Zaakir Mungrue\\Desktop\\clientApp\\sportsconnectB\\SportsconnectAPI\\SportsconnectAPI\\SportsconnectAPI.csproj",
+        "projectPath": "C:\\Users\\Zaakir Mungrue\\Desktop\\clientApp\\sportsconnectB\\SportsconnectAPI\\sportsconnectAPI\\SportsconnectAPI.csproj",
         "packagesPath": "C:\\Users\\Zaakir Mungrue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Zaakir Mungrue\\Desktop\\clientApp\\sportsconnectB\\SportsconnectAPI\\SportsconnectAPI\\obj\\",
+        "outputPath": "C:\\Users\\Zaakir Mungrue\\Desktop\\clientApp\\sportsconnectB\\SportsconnectAPI\\sportsconnectAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zaakir Mungrue\\AppData\\Roaming\\NuGet\\NuGet.Config",

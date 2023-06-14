@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SuWqj2lIGjqdbn9bRkdeb1d3FdmEZlzs1TFCV2+S91+RdgYFBlAs7UjQzhoIx3o1qT88SDDOq7R4Q1MifUy3Vw==",
+  "dgSpecHash": "joP+OcF0arcoO3ejrxwINbgH1fz8/8UE36BaxzbHURxJGPoQyk/zuHpO/DFVFyGxKhd3lH+RB2VW/ZN/qQx9PA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Zaakir Mungrue\\Desktop\\clientApp\\sportsconnectB\\SportsconnectAPI\\SportsconnectAPI\\SportsconnectAPI.csproj",
+  "projectFilePath": "C:\\Users\\Zaakir Mungrue\\Desktop\\clientApp\\sportsconnectB\\SportsconnectAPI\\sportsconnectAPI\\SportsconnectAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Zaakir Mungrue\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Zaakir Mungrue\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
